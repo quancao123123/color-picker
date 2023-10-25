@@ -1,6 +1,7 @@
 pipeline {
-  agent any
-
+  agent {
+    label 'jenkins-agent'
+  }
   stages {
     stage ('Install dependencies') {
       steps {
